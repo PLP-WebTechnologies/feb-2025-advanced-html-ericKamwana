@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketash - Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background: #003366;
+            color: white;
+        }
+        .logo {
+            width: 150px;  /* Increased Logo Size */
+            height: auto;
+            margin-right: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px;
+            background: linear-gradient(to right, #003366, #0055aa);
+            color: #fff;
+            text-align: center;
+        }
+        .container img {
+            width: 100%; /* Full width background image */
+            max-width: 1200px;
+            height: auto;
+        }
+        .form-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            color: #000;
+            margin-top: -50px; /* Move it up slightly */
+        }
+        .form-container h2 {
+            text-align: center;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .radio-group, .checkbox-group {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+        .radio-group label, .checkbox-group label {
+            cursor: pointer;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #003366;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0055aa;
+        }
+        .table-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            color: #000;
+            max-width: 800px; /* Keep table manageable */
+            margin: auto;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background: #003366;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="A_professional_logo_for_Marketash,_an_agribusiness.WEBP" alt="Marketash Logo" class="logo">
+        <h1>Marketash</h1>
+    </div>
+    <div class="container">
+        <img src="certified organic.jpg" alt="Be a certified organic farmer">
+        <div class="form-container">
+            <h2>Register</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter a strong password" required>
+                
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+                
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                <label>Preferred Contact Method:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="contact" value="phone"> Phone</label>
+                    <label><input type="radio" name="contact" value="email"> Email</label>
+                </div>
+                
+                <label>Interests:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="interest" value="farming"> Farming</label>
+                    <label><input type="checkbox" name="interest" value="buying"> Buying</label>
+                    <label><input type="checkbox" name="interest" value="investing"> Investing</label>
+                </div>
+                
+                <button type="submit">Create Account</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="table-container">
+        <h2>Contacts</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>123 Green Street</td>
+                <td>+123456789</td>
+                <td>johndoe@example.com</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>45 Harvest Road</td>
+                <td>+987654321</td>
+                <td>janesmith@example.com</td>
+            </tr>
+            <tr>
+                <td>Emily Johnson</td>
+                <td>789 Farm Lane</td>
+                <td>+112233445</td>
+                <td>emilyj@example.com</td>
+            </tr>
+            <tr>
+                <td>Michael Brown</td>
+                <td>67 Orchard Ave</td>
+                <td>+556677889</td>
+                <td>michaelb@example.com</td>
+            </tr>
+            <tr>
+                <td>Sarah Williams</td>
+                <td>99 Plantation Blvd</td>
+                <td>+998877665</td>
+                <td>sarahw@example.com</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
